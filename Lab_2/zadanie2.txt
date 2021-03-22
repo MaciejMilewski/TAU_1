@@ -1,1 +1,4 @@
-TODO
+1. Wybrać 2 strony/aplikacje webowe
+2. Przygotować po 3-4 scenariusze testów (opisowe), zamieścić scensariusze w pliku readme.md w repozytorium
+3. Napisać testy oparte na tych scenariuszach (użyć 3 różnych przeglądarek)
+4. Stworzyć test boundle/scenariusz testów
