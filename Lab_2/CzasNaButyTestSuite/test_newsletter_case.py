@@ -23,6 +23,7 @@ def test_newsletter(email, newsletter_terms, expected_text, driver):
 
         button_newsletter_save = driver.find_element_by_id("tln3_submit")
         button_newsletter_save.click()
+
     except Exception as e:
         print("Fields required for newsletter not found: ", e)
         driver.quit()
@@ -32,6 +33,7 @@ def test_newsletter(email, newsletter_terms, expected_text, driver):
         expected_text_found = WebDriverWait(driver, 3).until(
             EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{expected_text}')]"))
         )
+        driver.quit()
     except Exception as e:
         print("Not found: ", expected_text, e)
         driver.quit()
@@ -75,6 +77,8 @@ def test_newsletter_no_terms_checkbox(driver):
     result = False
     if warning_span_color_in_hex == "#ff0000":
         result = True
+
+    driver.quit()
 
     return result
 

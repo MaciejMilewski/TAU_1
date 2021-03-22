@@ -36,6 +36,7 @@ def test_login(email, password, expected_text, driver):
         expected_text_found = WebDriverWait(driver, 3).until(
             EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{expected_text}')]"))
         )
+        driver.quit()
     except Exception as e:
         print("Not found: ", expected_text, e)
         driver.quit()

@@ -66,6 +66,7 @@ def test_register(name, surname, address, postal_code, city, email,
         expected_text_found = WebDriverWait(driver, 3).until(
             EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{expected_text}')]"))
         )
+        driver.quit()
     except Exception as e:
         print("Not found: ", expected_text, e)
         driver.quit()
@@ -80,7 +81,7 @@ def test_register_no_shop_regulations_checkbox(driver):
     address = "Betonowa 13"
     postal_code = "10-100"
     city = "Szczecin"
-    email = "fadioa@blyat.com"
+    email = "fadiotrea@blyat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = "abcdefg1A"
@@ -98,7 +99,7 @@ def test_register_no_name(driver):
     address = "Betonowa 13"
     postal_code = "10-100"
     city = "Szczecin"
-    email = "apmlpp@blyat.com"
+    email = "apmlbbbbpp@blyat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = "abcdefg1A"
@@ -107,7 +108,7 @@ def test_register_no_name(driver):
 
     return test_register(name, surname, address, postal_code, city, email,
                          telephone_number, password, password_confirmation, shop_regulations,
-                        expected_text, driver)
+                         expected_text, driver)
 
 
 def test_register_no_surname(driver):
@@ -116,7 +117,7 @@ def test_register_no_surname(driver):
     address = "Betonowa 13"
     postal_code = "10-100"
     city = "Szczecin"
-    email = "aakratPLa@blyat.com"
+    email = "aakratPLa@bvvlyat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = "abcdefg1A"
@@ -170,7 +171,7 @@ def test_register_wrong_postal_code(driver):
     address = "Betonowa 13"
     postal_code = "1111111111"
     city = "Szczecin"
-    email = "uwmekuw1k@blyat.com"
+    email = "uwmekuw1k@blbvyat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = "abcdefg1A"
@@ -188,7 +189,7 @@ def test_register_wrong_address(driver):
     address = "xxx"
     postal_code = "80-100"
     city = "Szczecin"
-    email = "ipou@blyat.com"
+    email = "iaqpasou@blyat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = "abcdefg1A"
@@ -206,7 +207,7 @@ def test_register_no_password_confirmation(driver):
     address = "Betonowa 13"
     postal_code = "80-100"
     city = "Szczecin"
-    email = "alantIMPTAaa@blyat.com"
+    email = "alantIMPTvbssAaa@blyeat.com"
     telephone_number = "111222333"
     password = "abcdefg1A"
     password_confirmation = ""
