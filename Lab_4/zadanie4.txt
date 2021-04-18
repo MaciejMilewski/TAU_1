@@ -1,0 +1,4 @@
+(Termin oddania 20/04/2021 23:59) 
+1. Dodać do projektu Mockito
+2. Zamockować dwa elementy w projekcie np. 2 różne klasy i napisać przy ich użyciu po 3 testy (dla każdego użyć inny typ zwracany) - użyć when/given (https://github.com/arturadom/TAU_2021/tree/main/Laboratorium%204)
+3. Napisać i użyć stub (dla chętnych)
