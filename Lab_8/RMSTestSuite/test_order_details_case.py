@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 
 
-def test_shopping_cart(expected_text, driver):
+def test_order_details(expected_text, driver):
     try:
         url = "https://sklep.rms.pl/"
 
@@ -49,4 +49,4 @@ def test_shopping_cart(expected_text, driver):
 def test_adding_product_to_cart_with_quantity_change(driver):
     expected_text = "1198"
 
-    return test_shopping_cart(expected_text, driver)
+    return test_order_details(expected_text, driver)
