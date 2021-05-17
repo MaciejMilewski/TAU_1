@@ -13,7 +13,7 @@ def test_order_details(expected_text, driver):
 
         time.sleep(3)
 
-        popup_window_close_btn = driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[2]/a")
+        popup_window_close_btn = driver.find_element_by_xpath('//*[@id="popupfoot"]/a')
         popup_window_close_btn.click()
 
         headphones_product_category = driver.find_element_by_xpath("/html/body/div[2]/div/div/aside/nav/ul/li[4]/a/h2")
