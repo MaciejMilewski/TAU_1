@@ -26,12 +26,12 @@ def test_product_order_details(expected_text, driver):
 
         time.sleep(1.5)
 
-        add_to_cart_btn = driver.find_element_by_xpath('//*[@id="p1266420276"]')
+        add_to_cart_btn = driver.find_element_by_xpath('/html/body/main/div[1]/div[3]/div[3]/div/div[1]/div[2]/div/div[1]/div/div[5]/div/button')
         add_to_cart_btn.click()
 
         time.sleep(1.5)
 
-        go_to_cart_btn = driver.find_element_by_xpath('//*[@id="portal-root"]/div/div[2]/div[2]/div[1]/button')
+        go_to_cart_btn = driver.find_element_by_xpath('//html/body/div[5]/div/div[2]/div[2]/div[1]/button')
         go_to_cart_btn.click()
 
         time.sleep(1.5)
