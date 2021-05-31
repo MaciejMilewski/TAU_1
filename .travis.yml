@@ -1,6 +1,6 @@
 language: python
 before_install: cd Lab_6
 script:
-  - pytest
+  - pytest tests/TestWindowsCommandsManual.py tests/TestLinuxCommandsManual.py tests/TestCommandsManual.py
 install:
   - pip install -r requirements.txt
