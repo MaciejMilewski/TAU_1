@@ -1,6 +1,6 @@
 # Python - creating logs
-  - Used Python package for logging [https://pypi.org/project/logging/](https://pypi.org/project/logging/)
-  - For logging I used project from lab 8
+  - Package for logging [https://pypi.org/project/logging/](https://pypi.org/project/logging/)
+  - Used project from lab 8 - testing 2 sites with selenium using find_element_by_xpath() 
 
 # Setup
 ```
