@@ -11,27 +11,31 @@ def test_product_order_details(expected_text, driver):
         driver.maximize_window()
         driver.get(url)
 
-        search_bar_input = driver.find_element_by_xpath('//*[@id="bq"]')
+        time.sleep(1.5)
+
+        search_bar_input = driver.find_element_by_xpath('/html/body/header/div/div/div[3]/div/div/form/div[1]/input')
         search_bar_input.send_keys("ekstremista")
 
         time.sleep(1.5)
 
-        search_btn = driver.find_element_by_xpath('//*[@id="searchSet"]/button')
+        search_btn = driver.find_element_by_xpath('/html/body/header/div/div/div[3]/div/div/form/button')
         search_btn.click()
 
         time.sleep(1.5)
 
+        #
         book_card = driver.find_element_by_xpath('/html/body/main/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div/a')
         book_card.click()
 
         time.sleep(1.5)
 
+        #
         add_to_cart_btn = driver.find_element_by_xpath('/html/body/main/div[1]/div[3]/div[3]/div/div[1]/div[2]/div/div[1]/div/div[5]/div/button')
         add_to_cart_btn.click()
 
         time.sleep(1.5)
 
-        go_to_cart_btn = driver.find_element_by_xpath('//html/body/div[5]/div/div[2]/div[2]/div[1]/button')
+        go_to_cart_btn = driver.find_element_by_xpath('//*[@id="portal-root"]/div/div[2]/div[2]/div[1]/button')
         go_to_cart_btn.click()
 
         time.sleep(1.5)
