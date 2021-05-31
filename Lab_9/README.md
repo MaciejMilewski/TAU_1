@@ -1,5 +1,5 @@
 # Laboratorium - Travis ![alt text](https://travis-ci.com/MaciejMilewski/TAU_1.svg?branch=main)
-Użycie narzędzia Continous Integration do testowania projektu z Lab 6.
+Użycie narzędzia Continuous Integration do testowania projektu z Lab 6.
   - [https://travis-ci.com/](https://travis-ci.com/)
 
 # Projekt na travis-ci.com: 
