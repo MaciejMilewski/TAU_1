@@ -5,7 +5,7 @@ Użycie narzędzia Continous Integration do testowania projektu z Lab 6.
 # Projekt na travis-ci.com: 
 ![alt text](img/travis_project_page.png?raw=true "Project panel on travis-ci.com")
 
-# Wynik testu:
+# Log z testu:
 ![alt text](img/result.png?raw=true "Output logs from travis website")
 
 # Konfiguracja .travis.yml
